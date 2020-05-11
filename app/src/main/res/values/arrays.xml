@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题名称 -->
+    <string-array name="theme_name_list">
+        <item>Default</item>
+        <item>Night</item>
+        <item>Forest</item>
+        <item>Flower</item>
+        <item>Morning</item>
+        <item>Leaf</item>
+        <item>Coffee</item>
+        <item>Sea</item>
+        <item>Lake</item>
+        <item>Paris</item>
+        <item>Raindrops</item>
+        <item>Sky</item>
+        <item>Hill</item>
+        <item>Farm</item>
+        <item>Fireworks</item>
+        <item>Fruits</item>
+    </string-array>
+
+    <!-- 主题下载链接 -->
+    <string-array name="theme_url_list">
+        <item/>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_night.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_forest.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_flower.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_morning.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_leaf.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_coffee.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_sea.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_lake.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_paris.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_raindrops.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_sky.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_hill.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_farm.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_fireworks.jpg</item>
+        <item>http://r-daygram.saltycrackers.net/theme/bundle_theme_fruits.jpg</item>
+    </string-array>
+
+</resources>

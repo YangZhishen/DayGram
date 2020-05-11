@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="22dp">
+
+    <Button
+        android:id="@+id/select_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="9dp"
+        android:paddingEnd="9dp"
+        android:textSize="22.5sp"
+        android:background="@null" />
+
+</LinearLayout>

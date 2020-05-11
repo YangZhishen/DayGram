@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false">
+
+    <!-- 边缘线条宽度及颜色 -->
+    <stroke
+        android:width="1dp"
+        android:color="#E4E3DF" />
+
+    <!-- 内部填充颜色 -->
+    <solid android:color="#E4E3DF" />
+
+    <!-- 内偏距 -->
+    <padding
+        android:top="3dp"
+        android:bottom="5dp"
+        android:left="0dp"
+        android:right="0dp" />
+
+</shape>

@@ -1,0 +1,51 @@
+<resources>
+
+    <string name="app_name">DayGram</string>
+    <string name="today_week">Today is %1$s</string>
+    <string name="today_day">%1$s %2$d</string>
+
+    <string name="search_hint">Search&#8230;</string>
+    <string name="diary_date">%1$s %2$d / %3$d / %4$s</string>
+    <string name="result_count">%1d FOUND</string>
+
+    <string name="context_delete_confirm">是否删除 %d-%d-%d 的日记？</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_ok">确认</string>
+
+    <string name="setting_version">版本</string>
+    <string name="setting_send_feedback">[ 联系我们 ]</string>
+    <string name="feedback_header">写邮件</string>
+    <string name="feedback_subject">对DayGram的有关意见</string>
+    <string name="feedback_body_greeting">您好！</string>
+    <string name="setting_rate">[ 应用评分 ]</string>
+    <string name="setting_weibo_like">[ DAYGRAM官方微博 ]</string>
+    <string name="setting_theme">主题</string>
+    <string name="dialog_title_theme">选择主题</string>
+    <string name="setting_font_size">字体大小</string>
+    <string name="setting_use_system_font">使用系统字体</string>
+    <string name="setting_preview_type">预览方式</string>
+    <string name="setting_password">密码设置</string>
+    <string name="password_enter_new">请输入新密码</string>
+    <string name="password_reenter">请再次输入新密码</string>
+    <string name="password_enter_old">请输入旧密码</string>
+    <string name="password_failed">密码错误</string>
+    <string name="setting_backup">BACKUP / RESTORE</string>
+    <string name="setting_backup_sd_backup">Backup | Local</string>
+    <string name="setting_backup_sd_restore">Restore | Local</string>
+    <string name="setting_backup_confirm">是否将日记内容备份至外部存储？</string>
+    <string name="setting_restore_confirm">是否将备份至外部存储的日记内容恢复至手机？注意！！！恢复后，手机内的日记内容将会被覆盖。</string>
+    <string name="setting_export">EXPORT</string>
+    <string name="setting_export_as_mail">Export to E-mail</string>
+    <string name="setting_export_as_text">Export as Text</string>
+    <string name="setting_copyright">Copyright © 2018 Yang Zhishen</string>
+    <string name="permission_message">必须允许存储空间权限才能备份</string>
+
+    <string name="backup_not_found">未找到备份文件</string>
+    <string name="backup_success">备份成功</string>
+    <string name="backup_failed">备份失败</string>
+    <string name="database_not_found">未找到日记文件</string>
+    <string name="restore_success">恢复成功</string>
+    <string name="restore_failed">恢复失败</string>
+    <string name="unknown_error">未知错误</string>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+
+    <cn.haseo.daygram.widget.MyListView
+        android:id="@+id/my_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:scrollbars="none"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@color/global">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="14dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/select_month"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="21dp"
+            android:textSize="22.5sp"
+            android:background="@null" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="13dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="95dp"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/select_year"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="96dp"
+            android:textSize="22.5sp"
+            android:background="@null" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="13dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="140dp"
+            android:background="@color/black" />
+
+        <ImageButton
+            android:id="@+id/add_today"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:background="@drawable/button_add_today" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="13dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="139dp"
+            android:background="@color/black" />
+
+        <ImageButton
+            android:id="@+id/toggle_view"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="62dp"
+            android:src="@drawable/button_toggle_view"
+            android:contentDescription="@null"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/go_setting"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/button_setting"
+            android:contentDescription="@null"
+            android:background="@null" />
+
+    </FrameLayout>
+
+</LinearLayout>

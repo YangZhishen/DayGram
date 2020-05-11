@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:background="@null"/>
+
+    <LinearLayout
+        android:id="@+id/item1_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="41.5dp"
+            android:layout_height="match_parent">
+
+            <cn.haseo.daygram.widget.MyTextView
+                android:id="@+id/diary_week"
+                android:layout_width="match_parent"
+                android:layout_height="20.5dp"
+                android:gravity="center"
+                android:textColor="#1E1E1E"
+                android:textAllCaps="true"
+                android:textSize="11sp"
+                app:fontName="Avenir-Roman"
+                tools:ignore="SmallSp" />
+
+            <View
+                android:id="@+id/horizontal_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <cn.haseo.daygram.widget.MyTextView
+                android:id="@+id/diary_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="1dp"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                app:fontName="Georgia"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vertical_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <cn.haseo.daygram.widget.MyTextView
+            android:id="@+id/diary_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="11.2dp"
+            android:paddingEnd="14dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="4.4dp"
+            android:textColor="@color/black"
+            app:fontName="Georgia" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ContentActivity">
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        tools:ignore="UselessParent">
+
+        <cn.haseo.daygram.widget.MyTextView
+            android:id="@+id/show_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:fontName="Arvil_Sans" />
+
+        <View
+            android:id="@+id/underline"
+            android:layout_width="match_parent"
+            android:layout_height="1.9dp"
+            android:layout_marginStart="54.2dp"
+            android:layout_marginEnd="54.2dp"
+            android:layout_marginTop="18.2dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="24.2dp"
+                android:layout_marginEnd="24.2dp"
+                android:scrollbars="none">
+
+                <EditText
+                    android:id="@+id/diary_editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lineSpacingExtra="4.4dp"
+                    android:textSize="15.3sp"
+                    android:textColor="@color/black"
+                    android:hint="@null"
+                    android:background="@null"
+                    android:importantForAutofill="no"
+                    tools:targetApi="o" />
+
+            </ScrollView>
+
+            <FrameLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="11.2dp"
+                android:layout_marginEnd="14.2dp">
+
+                <Button
+                    android:id="@+id/add_time_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="@drawable/add_time_btn" />
+
+                <Button
+                    android:id="@+id/done_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@drawable/done_btn" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

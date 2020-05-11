@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global"
+    tools:context=".SettingActivity">
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:scrollbars="none"
+        android:overScrollMode="always">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17.2dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="13.4dp"
+                    android:layout_marginTop="7.8dp"
+                    android:background="@color/black" />
+
+                <cn.haseo.daygram.widget.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="36dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="@string/setting_version"
+                    app:fontName="Arvil_Sans"/>
+
+                <cn.haseo.daygram.widget.MyTextView
+                    android:id="@+id/version_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    app:fontName="Arvil_Sans"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19.2dp">
+
+                <Button
+                    android:id="@+id/send_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#636362"
+                    android:textSize="20sp"
+                    android:text="@string/setting_send_feedback"
+                    android:background="@null"/>
+
+                <Button
+                    android:id="@+id/rate_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/send_feedback"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#636362"
+                    android:textSize="20sp"
+                    android:text="@string/setting_rate"
+                    android:background="@null" />
+
+                <Button
+                    android:id="@+id/go_weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rate_app"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#636362"
+                    android:textSize="20sp"
+                    android:text="@string/setting_weibo_like"
+                    android:background="@null" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37.2dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="13.4dp"
+                    android:layout_marginTop="7.5dp"
+                    android:background="@color/black" />
+
+                <cn.haseo.daygram.widget.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="@string/setting_theme"
+                    app:fontName="Arvil_Sans"/>
+
+                <Button
+                    android:id="@+id/select_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:background="@null" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24.5dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="13.4dp"
+                    android:layout_marginTop="16.2dp"
+                    android:background="@color/black" />
+
+                <cn.haseo.daygram.widget.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="@string/setting_font_size"
+                    app:fontName="Arvil_Sans"/>
+
+                <ImageButton
+                    android:id="@+id/font_size4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:contentDescription="@null"
+                    android:src="@drawable/button_setting_5"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/font_size3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="42dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/button_setting_4"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/font_size2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="84dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/button_setting_3"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/font_size1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="126dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/button_setting_2"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/font_size0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="168dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/button_setting_1"
+                    android:background="@null" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="13.4dp"
+                    android:layout_marginTop="16.2dp"
+                    android:background="@color/black" />
+
+                <cn.haseo.daygram.widget.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="@string/setting_use_system_font"
+                    app:fontName="Arvil_Sans"/>
+
+                <ImageButton
+                    android:id="@+id/use_system_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/button_setting_on"
+                    android:contentDescription="@null"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/use_custom_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="42dp"
+                    android:src="@drawable/button_setting_off"
+                    android:contentDescription="@null"
+                    android:background="@null" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="13.4dp"
+                    android:layout_marginTop="16.2dp"
+                    android:background="@color/black" />
+
+                <cn.haseo.daygram.widget.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="@string/setting_preview_type"
+                    app:fontName="Arvil_Sans"/>
+
+                <ImageButton
+                    android:id="@+id/preview_type1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/button_preview_2"
+                    android:contentDescription="@null"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/preview_type0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="42dp"
+                    android:src="@drawable/button_preview_1"
+                    android:contentDescription="@null"
+                    android:background="@null" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="13.4dp"
+                    android:layout_marginTop="16.2dp"
+                    android:background="@color/black" />
+
+                <cn.haseo.daygram.widget.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="@string/setting_password"
+                    app:fontName="Arvil_Sans"/>
+
+                <ImageButton
+                    android:id="@+id/password_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/button_setting_on"
+                    android:contentDescription="@null"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/password_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="42dp"
+                    android:src="@drawable/button_setting_off"
+                    android:contentDescription="@null"
+                    android:background="@null" />
+
+                <ImageButton
+                    android:id="@+id/change_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="84dp"
+                    android:src="@drawable/button_setting_chpass"
+                    android:contentDescription="@null"
+                    android:background="@null" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="15.2dp"
+                    android:background="@color/black" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="23.2dp"
+                    android:background="#959593" />
+
+                <cn.haseo.daygram.widget.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="@string/setting_backup"
+                    app:fontName="Arvil_Sans"/>
+
+                <ImageButton
+                    android:id="@+id/backup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/button_setting_circle"
+                    android:contentDescription="@null"
+                    android:background="@null" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="15.2dp"
+                    android:background="@color/black" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="23.2dp"
+                    android:background="#959593" />
+
+                <cn.haseo.daygram.widget.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.2dp"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:text="@string/setting_export"
+                    app:fontName="Arvil_Sans"/>
+
+                <ImageButton
+                    android:id="@+id/export"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/button_setting_circle"
+                    android:contentDescription="@null"
+                    android:background="@null" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="15.2dp"
+            android:layout_marginEnd="15.2dp"
+            android:background="#6A6A6A" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp">
+
+            <cn.haseo.daygram.widget.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24.5dp"
+                android:textColor="#B9B6A8"
+                android:textSize="11sp"
+                android:text="@string/setting_copyright"
+                app:fontName="Avenir-Roman"
+                tools:ignore="SmallSp" />
+
+            <ImageButton
+                android:id="@+id/out_Setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/button_setting"
+                android:contentDescription="@null"
+                android:background="@null"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

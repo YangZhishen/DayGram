@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:paddingTop="12dp"
+    android:paddingStart="21dp"
+    android:paddingEnd="21dp"
+    android:background="@drawable/result_selector">
+
+    <cn.haseo.daygram.widget.MyTextView
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:lineSpacingExtra="4.5dp"
+        android:maxLines="2"
+        android:textColor="#272727"
+        android:textSize="15.3sp"
+        app:fontName="Georgia" />
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.haseo.daygram.widget.MyTextView
+            android:id="@+id/diary_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:textColor="#AAA9A7"
+            android:textSize="14sp"
+            android:text="@string/diary_date"
+            app:fontName="Arvil_Sans" />
+
+        <cn.haseo.daygram.widget.MyTextView
+            android:id="@+id/result_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:textColor="#AAA9A7"
+            android:textSize="14sp"
+            android:text="@string/result_count"
+            app:fontName="Arvil_Sans" />
+
+    </FrameLayout>
+
+</LinearLayout>
